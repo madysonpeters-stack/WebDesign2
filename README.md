@@ -1,4 +1,4 @@
-# Within Reach – Community Resource Access
+# Within Reach : Community Resource Access
 
 A rough responsive HTML/CSS/JavaScript prototype for a Missoula community resource directory.
 
