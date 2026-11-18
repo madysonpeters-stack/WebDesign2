@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Within Reach helps Missoula residents find local community assistance.">
+  <title>About & Contribute | Within Reach</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-inner">
+  <a class="brand" href="index.html" aria-label="Within Reach home">
+    <span class="brand-mark" aria-hidden="true">⌂</span>
+    <span><span class="brand-name">Within Reach</span><span class="brand-tagline">Local help, made clear.</span></span>
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+  <nav class="main-nav" id="main-nav" aria-label="Main navigation"><a href="index.html" >Home</a><a href="find-help.html" >Find Help</a><a href="categories.html" >Browse Needs</a><a href="about.html" aria-current="page">About & Contribute</a></nav>
+</div></header>
+<main id="main"><div class="container">
+<div class="eyebrow">About the project</div><h1>Support starts with a clear next step.</h1>
+<div class="grid grid-2 section">
+  <section class="card"><h2>About Within Reach</h2><p>Within Reach is a community resource directory concept designed to help Missoula residents find legitimate local assistance and understand how to access it.</p><p>Our goal is to make information easier to find, easier to understand, and less overwhelming.</p></section>
+  <div class="placeholder-image">ADD MISSOULA COMMUNITY OR LANDSCAPE PHOTO HERE</div>
+</div>
+<section class="section" id="contribute">
+  <div class="section-head"><div class="eyebrow">Get involved</div><h2>Contribute to the community</h2><p class="muted">Help keep local resource information visible and useful.</p></div>
+  <div class="grid grid-2">
+    <div class="card"><div class="category-icon">♡</div><h3>Donate</h3><p>Support local organizations providing essential services. Choose an organization and donate through its official website.</p><a class="btn btn-outline" href="https://missoulafoodbank.org/" target="_blank" rel="noopener">Explore local giving</a></div>
+    <div class="card"><div class="category-icon">✋</div><h3>Volunteer</h3><p>Share your time with organizations supporting people across Missoula.</p><a class="btn btn-outline" href="https://www.thepoverellocenter.org/" target="_blank" rel="noopener">Explore volunteer options</a></div>
+  </div>
+</section>
+<section class="section card" id="contact">
+  <h2>Contact & resource updates</h2><p>If you know of a resource that should be included or notice information that needs updating, use this simple contact form.</p>
+  <form>
+    <div class="form-grid"><div class="field"><label for="contact-name">Name (optional)</label><input id="contact-name" type="text" placeholder="Your name"></div><div class="field"><label for="contact-email">Email (optional)</label><input id="contact-email" type="email" placeholder="you@example.com"></div></div>
+    <div class="field"><label for="contact-message">Message</label><textarea id="contact-message" placeholder="Share a resource or suggest an update."></textarea></div>
+    <p class="small">Prototype only: this form is not connected to an inbox. Connect it to an approved form service before launch.</p>
+    <button class="btn" type="button" onclick="alert('Thanks! This is a class prototype, so the message has not been sent.')">Submit message</button>
+  </form>
+</section>
+<section class="section form-note" id="privacy"><strong>Privacy note:</strong> The intake form is anonymous in this prototype. Do not enter sensitive personal details. No intake answers are stored or sent to a person.</section>
+</div></main>
+<footer class="site-footer"><div class="container footer-inner">
+  <div><div class="footer-title">Within Reach</div><p class="small" style="color:#eee6d4">A starting point for support in Missoula, Montana.</p></div>
+  <div><a href="about.html">About</a><a href="about.html#contribute">Volunteer & Donate</a><a href="about.html#contact">Contact</a><a href="about.html#privacy">Privacy</a></div>
+</div></footer>
+</body></html>

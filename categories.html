@@ -1,6 +1,40 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Categories</title><link rel="stylesheet" href="styles.css"></head>
-<body><header><h1>Browse Categories</h1><p>Choose an area where you need support.</p></header>
-<nav><a href="index.html">Home</a><a href="search.html">Find Resources</a><a href="categories.html">Categories</a><a href="about-contact.html">About & Contact</a></nav>
-<main><h2>Assistance Categories</h2><div class="cards"><a class="card" href="search.html">Housing</a><a class="card" href="search.html">Utilities</a><a class="card" href="search.html">Food</a><a class="card" href="search.html">Transportation</a><a class="card" href="search.html">Healthcare</a><a class="card" href="search.html">Living Expenses</a></div></main>
-<footer><a href="#">Privacy Policy</a><a href="#">Accessibility</a><a href="#">Terms of Use</a></footer></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Within Reach helps Missoula residents find local community assistance.">
+  <title>Browse Needs | Within Reach</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-inner">
+  <a class="brand" href="index.html" aria-label="Within Reach home">
+    <span class="brand-mark" aria-hidden="true">⌂</span>
+    <span><span class="brand-name">Within Reach</span><span class="brand-tagline">Local help, made clear.</span></span>
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+  <nav class="main-nav" id="main-nav" aria-label="Main navigation"><a href="index.html" >Home</a><a href="find-help.html" >Find Help</a><a href="categories.html" aria-current="page">Browse Needs</a><a href="about.html" >About & Contribute</a></nav>
+</div></header>
+<main id="main"><div class="container">
+<div class="eyebrow">Browse by need</div><h1>Explore resources</h1><p class="lead">Start with the area that best matches what you're looking for. You can select more than one need in the Find Help form.</p>
+<div class="grid grid-3 section">
+  <a class="card category-card" href="find-help.html#intake"><div class="category-icon">⌂</div><h3>Housing</h3><p>Shelter, housing navigation, and housing stability.</p><span class="text-link">Find housing support →</span></a>
+  <a class="card category-card" href="find-help.html#intake"><div class="category-icon">ϟ</div><h3>Utilities</h3><p>Utility bills, energy assistance, and state benefits.</p><span class="text-link">Find utility support →</span></a>
+  <a class="card category-card" href="find-help.html#intake"><div class="category-icon">♡</div><h3>Food</h3><p>Food banks, meal programs, and food access.</p><span class="text-link">Find food support →</span></a>
+  <a class="card category-card" href="find-help.html#intake"><div class="category-icon">↗</div><h3>Transportation</h3><p>Bus routes, schedules, and transportation options.</p><span class="text-link">Find transportation →</span></a>
+  <a class="card category-card" href="find-help.html#intake"><div class="category-icon">＋</div><h3>Healthcare</h3><p>Healthcare access and wellness support.</p><span class="text-link">Find healthcare →</span></a>
+  <a class="card category-card" href="find-help.html#intake"><div class="category-icon">☼</div><h3>Free Services</h3><p>Public Wi-Fi, charging, computers, showers, laundry, and more.</p><span class="text-link">Find free services →</span></a>
+</div>
+<div class="section notice"><div><h3>Not sure where to start?</h3><p style="margin:0">Choose several needs and preferences in the anonymous intake form.</p></div><a class="btn" href="find-help.html#intake">Use intake form</a></div>
+</div></main>
+<footer class="site-footer"><div class="container footer-inner">
+  <div><div class="footer-title">Within Reach</div><p class="small" style="color:#eee6d4">A starting point for support in Missoula, Montana.</p></div>
+  <div><a href="about.html">About</a><a href="about.html#contribute">Volunteer & Donate</a><a href="about.html#contact">Contact</a><a href="about.html#privacy">Privacy</a></div>
+</div></footer>
+</body></html>

@@ -1,9 +1,58 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Community Resource Access</title><link rel="stylesheet" href="styles.css"></head>
-<body><header><h1>Community Resource Access</h1><p>Helping Missoula residents find the support they need.</p></header>
-<nav><a href="index.html">Home</a><a href="search.html">Find Resources</a><a href="categories.html">Categories</a><a href="about-contact.html">About & Contact</a></nav>
-<main><section><h2>Find help. Get support.</h2><p>Explore local resources for everyday needs.</p><div class="placeholder">Homepage image / welcome area</div><a class="button" href="search.html">Find Resources</a></section>
-<section><h2>What do you need help with?</h2><div class="cards"><div class="card">Housing</div><div class="card">Utilities</div><div class="card">Food</div><div class="card">Transportation</div><div class="card">Healthcare</div><div class="card">Living Expenses</div></div></section>
-<section><h2>How It Works</h2><div class="cards"><div class="card">1. Search</div><div class="card">2. Review</div><div class="card">3. Connect</div></div></section>
-<section class="placeholder">Need help now? Emergency assistance information</section></main>
-<footer><a href="#">Privacy Policy</a><a href="#">Accessibility</a><a href="#">Terms of Use</a></footer></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Within Reach helps Missoula residents find local community assistance.">
+  <title>Home | Within Reach</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-inner">
+  <a class="brand" href="index.html" aria-label="Within Reach home">
+    <span class="brand-mark" aria-hidden="true">⌂</span>
+    <span><span class="brand-name">Within Reach</span><span class="brand-tagline">Local help, made clear.</span></span>
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+  <nav class="main-nav" id="main-nav" aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="find-help.html" >Find Help</a><a href="categories.html" >Browse Needs</a><a href="about.html" >About & Contribute</a></nav>
+</div></header>
+<main id="main"><div class="container">
+<section class="hero">
+  <div><div class="eyebrow">Missoula, Montana</div><h1>Find your next step.</h1>
+    <p>Within Reach connects Missoula residents with local help for everyday needs. Explore resources, understand what to expect, and choose the next step that works for you.</p>
+    <a class="btn" href="find-help.html">Find support</a>
+    <a class="btn btn-outline" style="border-color:#faf6e8;color:#faf6e8" href="categories.html">Browse needs</a>
+  </div>
+  <div class="hero-art"><div><div class="door-icon">⌂</div><strong>IMAGE PLACEHOLDER</strong><span>Add an uplifting Missoula landscape or open-door brand illustration here.</span></div></div>
+</section>
+<section class="section">
+  <div class="section-head"><div class="eyebrow">Start here</div><h2>What kind of support are you looking for?</h2><p class="muted">Choose a category to explore local resources.</p></div>
+  <div class="grid grid-3">
+    <a class="card category-card" href="find-help.html#intake"><div class="category-icon">⌂</div><h3>Housing</h3><p>Shelter, housing navigation, and stability.</p><span class="text-link">Explore housing →</span></a>
+    <a class="card category-card" href="find-help.html#intake"><div class="category-icon">ϟ</div><h3>Utilities</h3><p>Help understanding utility and energy assistance.</p><span class="text-link">Explore utilities →</span></a>
+    <a class="card category-card" href="find-help.html#intake"><div class="category-icon">♡</div><h3>Food</h3><p>Food banks, meals, and food access.</p><span class="text-link">Explore food →</span></a>
+    <a class="card category-card" href="find-help.html#intake"><div class="category-icon">↗</div><h3>Transportation</h3><p>Public transit and getting around Missoula.</p><span class="text-link">Explore transportation →</span></a>
+    <a class="card category-card" href="find-help.html#intake"><div class="category-icon">＋</div><h3>Healthcare</h3><p>Health and wellness support options.</p><span class="text-link">Explore healthcare →</span></a>
+    <a class="card category-card" href="find-help.html#intake"><div class="category-icon">☼</div><h3>Free Services</h3><p>Wi-Fi, computers, charging, showers, and more.</p><span class="text-link">Explore free services →</span></a>
+  </div>
+</section>
+<section class="section">
+  <div class="section-head"><div class="eyebrow">A simple process</div><h2>How it works</h2></div>
+  <div class="steps">
+    <div class="card step"><div class="step-number">1</div><h3>Tell us what you need</h3><p class="muted">Select needs and preferences. No name or account required.</p></div>
+    <div class="card step"><div class="step-number">2</div><h3>Review your options</h3><p class="muted">See suggested local resources and visit their official websites.</p></div>
+    <div class="card step"><div class="step-number">3</div><h3>Connect directly</h3><p class="muted">Check details with the organization and take the next step.</p></div>
+  </div>
+</section>
+<section class="section notice"><div><h3>Looking for a place to start?</h3><p style="margin:0">Use the anonymous intake form to get a short list based on your needs.</p></div><a class="btn" href="find-help.html#intake">Get recommendations</a></section>
+</div></main>
+<footer class="site-footer"><div class="container footer-inner">
+  <div><div class="footer-title">Within Reach</div><p class="small" style="color:#eee6d4">A starting point for support in Missoula, Montana.</p></div>
+  <div><a href="about.html">About</a><a href="about.html#contribute">Volunteer & Donate</a><a href="about.html#contact">Contact</a><a href="about.html#privacy">Privacy</a></div>
+</div></footer>
+</body></html>

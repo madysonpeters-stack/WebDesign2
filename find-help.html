@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Within Reach helps Missoula residents find local community assistance.">
+  <title>Find Help | Within Reach</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-inner">
+  <a class="brand" href="index.html" aria-label="Within Reach home">
+    <span class="brand-mark" aria-hidden="true">⌂</span>
+    <span><span class="brand-name">Within Reach</span><span class="brand-tagline">Local help, made clear.</span></span>
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+  <nav class="main-nav" id="main-nav" aria-label="Main navigation"><a href="index.html" >Home</a><a href="find-help.html" aria-current="page">Find Help</a><a href="categories.html" >Browse Needs</a><a href="about.html" >About & Contribute</a></nav>
+</div></header>
+<main id="main"><div class="container">
+<div class="eyebrow">Personalized starting points</div><h1>Find help</h1>
+<p class="lead">Select what matters to you and we'll suggest a few local places to start. You can use this form without sharing your name or contact information.</p>
+<section class="form-panel section" id="intake">
+  <form id="intake-form">
+    <fieldset><legend>What do you need help with?</legend>
+      <label><input type="checkbox" name="needs" value="housing"> Housing</label>
+      <label><input type="checkbox" name="needs" value="utilities"> Utilities</label>
+      <label><input type="checkbox" name="needs" value="food"> Food</label>
+      <label><input type="checkbox" name="needs" value="transportation"> Transportation</label>
+      <label><input type="checkbox" name="needs" value="healthcare"> Healthcare</label>
+      <label><input type="checkbox" name="needs" value="free"> Free services</label>
+      <label><input type="checkbox" name="needs" value="living"> Other living expenses</label>
+    </fieldset>
+    <div class="form-grid">
+      <div class="field"><label for="budget">Cost preference</label><select id="budget" name="budget"><option value="">No preference</option><option>$0 / Free</option><option>$ - Low cost</option><option>$$ - Moderate cost</option><option>$$$ - Any cost</option></select></div>
+      <div class="field"><label for="location">Location or area (optional)</label><input id="location" name="location" type="text" placeholder="Example: Downtown Missoula"></div>
+      <div class="field"><label for="group">Who is the support for?</label><select id="group" name="group"><option value="">Prefer not to say</option><option>One person</option><option>Family or household</option><option>Group</option></select></div>
+      <div class="field"><label for="transport">Do you need transportation?</label><select id="transport" name="transport"><option value="">Not sure</option><option value="yes">Yes</option><option value="no">No</option></select></div>
+      <div class="field"><label for="timeframe">When do you need support?</label><select id="timeframe" name="timeframe"><option value="">No preference</option><option>As soon as possible</option><option>Within a week</option><option>Within a month</option><option>Planning ahead</option></select></div>
+      <div class="field"><label for="budget2">Budget details (optional)</label><input id="budget2" name="budget2" type="text" placeholder="Optional range or details"></div>
+    </div>
+    <div class="field"><label for="notes">Anything else we should consider? (optional)</label><textarea id="notes" name="notes" placeholder="For example: accessibility needs, preferred area, or questions for a resource navigator. Avoid including private information."></textarea></div>
+    <div class="form-note"><strong>Your privacy:</strong> This class prototype does not ask for your name, save your answers, or send your notes to an agent. The selections are used only in this browser to display suggested resources.</div>
+    <p style="margin-top:18px"><button class="btn" type="submit">Show suggested resources</button> <button class="btn btn-outline" type="reset" id="reset-intake">Clear form</button></p>
+  </form>
+</section>
+<section class="section" id="recommendations" aria-live="polite"></section>
+<section class="section"><div class="section-head"><h2>Or browse all starter resources</h2><p class="muted">Search and filter the sample directory.</p></div>
+  <div class="form-grid"><input id="resource-search" type="search" placeholder="Search by name or service" aria-label="Search resources"><select id="category-filter" aria-label="Filter by category"><option value="all">All categories</option><option value="food">Food</option><option value="utilities">Utilities</option><option value="transportation">Transportation</option><option value="housing">Housing</option><option value="free">Free services</option></select></div>
+  <div class="results-list">
+    <article class="result-card" data-resource data-category="food"><h3>Missoula Food Bank & Community Center</h3><p>Food assistance and community support.</p><a href="https://missoulafoodbank.org/" target="_blank" rel="noopener">Official website ↗</a><span class="updated">Hours and phone: confirm on official website · Listing review: add date</span></article>
+    <article class="result-card" data-resource data-category="utilities"><h3>Montana Apply</h3><p>Online portal to explore and apply for state benefits.</p><a href="https://apply.mt.gov/" target="_blank" rel="noopener">Official website ↗</a><span class="updated">Online portal · Listing review: add date</span></article>
+    <article class="result-card" data-resource data-category="transportation"><h3>Mountain Line</h3><p>Missoula public transportation maps and schedules.</p><a href="https://mountainline.com/your-trip/maps-schedules/" target="_blank" rel="noopener">Maps & schedules ↗</a><span class="updated">Check current schedule · Listing review: add date</span></article>
+    <article class="result-card" data-resource data-category="housing free"><h3>Poverello Center</h3><p>Local services and support for people experiencing homelessness and hardship.</p><a href="https://www.thepoverellocenter.org/" target="_blank" rel="noopener">Official website ↗</a><span class="updated">Confirm current services and hours · Listing review: add date</span></article>
+    <article class="result-card" data-resource data-category="housing free"><h3>Watershed Navigation Center</h3><p>Local navigation and resource connection point.</p><a href="https://www.missoulacounty.us/" target="_blank" rel="noopener">Missoula County website ↗</a><span class="updated">Confirm current access details · Listing review: add date</span></article>
+    <article class="result-card" data-resource data-category="free"><h3>Missoula Public Library</h3><p>Explore public computers, Wi-Fi, learning resources, and library services.</p><a href="https://www.missoulapubliclibrary.org/" target="_blank" rel="noopener">Official website ↗</a><span class="updated">Check current hours and services · Listing review: add date</span></article>
+  </div>
+</section>
+</div></main>
+<footer class="site-footer"><div class="container footer-inner">
+  <div><div class="footer-title">Within Reach</div><p class="small" style="color:#eee6d4">A starting point for support in Missoula, Montana.</p></div>
+  <div><a href="about.html">About</a><a href="about.html#contribute">Volunteer & Donate</a><a href="about.html#contact">Contact</a><a href="about.html#privacy">Privacy</a></div>
+</div></footer>
+</body></html>
