@@ -22,3 +22,10 @@ Upload the contents of this folder to the root of your GitHub repository. In Set
 - Resource hours, phone numbers, eligibility, and dates need to be verified with each organization before publishing. The pages intentionally say to confirm current details instead of inventing them.
 - Recommendation logic is a starter rule-based filter, not an AI algorithm.
 - Replace placeholder blocks with approved images/icons. Keep image credits directly below images.
+
+# Assignment 9
+##### If you had just one more week to work on this project, what would you add, change, or refine?
+I would have understood the business identity more, and use photos and visuals to create a more cohesive feel. I would also be interested in creating a built in database, and maybe even further implement an AI that could give personalized recommendations and action plans
+
+##### What’s one HTML, CSS, or publishing skill you feel stronger in now?
+I feel strong in my understanding of functions and organization, and how HTML interacts with CSS. In my first assignment I struggled with understanding consistency and how helpful it is to edit all of the pages. 
